@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  height: 10000px;
+  /*height: 10000px;*/
 
 }
 
@@ -17,12 +17,13 @@ h1 {
   left: 100px;
   margin-bottom: 0px;
   font-size: 24px;
+  width: 100%;
+  width: calc(100% - 200px);
 }
 
 hr {
   left:100px;
   width: calc(100% - 200px);
-  color: red;
   margin-top: 100px;
 }
 
@@ -55,6 +56,22 @@ header span {
   font-size: 25px;
 }
 /******************************************************************************/
+
+
+/* Footer *********************************************************************/
+footer {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #BDBDBD;
+}
+
+
+/******************************************************************************/
+
 
 
 /* Tabs ***********************************************************************/
@@ -124,6 +141,32 @@ header span {
 #residentsTable table .needToBeCentered {
   text-align: center;
 }
+
+#searchLogo {
+  position: relative;
+  left: 100px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+#searchInput {
+  position: relative;
+  left: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #BDBDBD;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  transition: border-color 0.4s ;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #4DB6AC;
+}
 /******************************************************************************/
 
 
@@ -132,19 +175,32 @@ header span {
 #addResident {
   margin-top: 25px;
   position: relative;
-  left:100px;
-  width: calc(100% - 200px);
+  left:90px;
+  width: calc(100% - 180px);
+  /*left:100px;
+  width: calc(100% - 200px);*/
 }
 
 #addResident table {
   font-family: 'Roboto', sans-serif;
   width: 100%;
+
 }
+#addResident table th {
+  text-align: left;
+  font-weight: 100;
+}
+
+#addResident table th,  #addResident table td{
+  padding: 10px;
+}
+
 #addResident input {
+  width: 100%;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-color: #424242;
+  border-color: #BDBDBD;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -156,6 +212,104 @@ header span {
   border-color: #4DB6AC;
  }
 
+.inputError {
+  text-align: center;
+  font-weight: 100;
+  font-size: 13px;
+  color: #BDBDBD;
+  height: 15px;
+}
 
+#password {
+  color: #BDBDBD;
+}
+
+#createBtn {
+ cursor: pointer;
+ text-align: center;
+ transition: color 0.4s, border-color 0.4s;
+ border: 2px;
+ border-color: #BDBDBD;
+ border-style: solid;
+ font-weight: 100;
+}
+#createBtn:hover {
+  color: #FF3D00;
+  border-color: #FF3D00;
+}
+
+/*#submitBtn {
+  background: #80CBC4;
+  border: none;
+  font-size: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 7px;
+  cursor: pointer;
+}
+
+#submitBtn:focus {
+  outline: none;
+  box-shadow: none;
+}*/
+/******************************************************************************/
+
+
+/* ResidentInfo  **************************************************************/
+#residentInfo {
+  margin-top: 25px;
+  position: relative;
+  left:100px;
+  width: calc(100% - 200px);
+  height: 1000px;
+
+}
+
+#residentInfo #residentPhoto {
+  margin-top: 0px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 150px;
+}
+/******************************************************************************/
+
+
+
+/* InventoryTable  ************************************************************/
+
+#inventoryTable {
+  margin-top: 25px;
+  position: relative;
+  left:100px;
+  width: calc(100% - 200px);
+}
+
+#inventoryTable table {
+  border-style: none;
+  border-collapse: collapse;
+  width: 100%
+}
+
+#inventoryTable table tr, #inventoryTable table th, #inventoryTable table td{
+  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  border-style: none;
+}
+ #inventoryTable table tr:nth-child(even) {
+   background-color: #E0F2F1;
+ }
+
+#inventoryTable table th {
+  font-weight: 400;
+}
+#inventoryTable table .rows:hover {
+  background-color: #FF6E40;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#inventoryTable table .needToBeCentered {
+  text-align: center;
+}
 
 /******************************************************************************/

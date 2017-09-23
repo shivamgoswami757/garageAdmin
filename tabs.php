@@ -1,5 +1,5 @@
 <div id="tabs">
-<?php if($type == "админ"): ?>
+<?php if($_SESSION["type"] == "admin"): ?>
   <table>
     <td>
       <a href="residents.php" class="tabsAnchor">резиденты</a>
@@ -8,7 +8,7 @@
       <a href="#" class="tabsAnchor">столы</a>
     </td>
     <td>
-      <a href="#" class="tabsAnchor">инвентарь</a>
+      <a href="inventory.php" class="tabsAnchor">инвентарь</a>
     </td>
   </table>
 

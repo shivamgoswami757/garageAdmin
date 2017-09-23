@@ -20,12 +20,9 @@ require_once("header.php");
  ?>
    <main id="main">
      <?php require_once("tabs.php"); ?>
-     <h1>Таблица резидентов</h1>
-     <?php require_once("residentsTable.php"); ?>
-     <hr noshade color="#F5F5F5">
-     <h1>Добавить резидента</h1>
-     <?php require_once("addResident.php"); ?>
-     <hr noshade color="#F5F5F5">
+     <h1>Таблица инветаря</h1>
+     <?php require_once("inventoryTable.php"); ?>
+
    </main>
 <?php require_once("footer.php"); ?>
   </body>
